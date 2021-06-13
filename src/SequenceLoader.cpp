@@ -32,7 +32,7 @@ SequenceLoader::SequenceLoader(std::string path, std::string im_ext, int timesta
     //im_ext -- image extension, includes the dot Ex: ".png"
     //timestamp_offset -- offset of the timestamp in the filenae
     
-    namespace fs = ::boost::filesystem;
+    namespace fs = std::filesystem;
     pair_id_path frame_pair;
     int timestamp;
     fs::path p(path);

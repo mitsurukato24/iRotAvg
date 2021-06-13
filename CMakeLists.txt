@@ -39,7 +39,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
 endif()
 
 
-set (CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD 17)
 
 # Make CMake aware of the cmake folder for local FindXXX scripts,
 # append rather than set in case the user has passed their own

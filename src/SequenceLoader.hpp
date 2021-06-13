@@ -27,8 +27,10 @@
 #define SequenceLoader_hpp
 
 #include <stdio.h>
-#include <string.h>
-#include <boost/filesystem.hpp>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <filesystem>
 
 
 namespace irotavg
@@ -37,7 +39,7 @@ namespace irotavg
     {
     public:
 
-        typedef std::pair<int,boost::filesystem::path> pair_id_path;
+        typedef std::pair<int, std::filesystem::path> pair_id_path;
 
         SequenceLoader(std::string path, std::string im_ext, int timestamp_offset=0);
         
